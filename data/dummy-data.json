@@ -1,0 +1,20 @@
+[
+   {
+      "title": "Gaming Console",
+      "description": "Sintendo Nwitch with a racing game",
+      "start_price": 100,
+      "reserve_price": 150
+   },
+   {
+      "title": "Tennis Racket",
+      "description": "Signed by Foger Rederer.",
+      "start_price": 75,
+      "reserve_price": 200
+   },
+   {
+      "title": "Steering Wheel",
+      "description": "Perfect quality",
+      "start_price": 50,
+      "reserve_price": 110
+   }
+]
