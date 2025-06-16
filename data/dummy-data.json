@@ -16,5 +16,107 @@
       "description": "Perfect quality",
       "start_price": 50,
       "reserve_price": 110
+   },
+   {
+      "title": "Mountain Bike",
+      "description": "21-speed, lightweight frame",
+      "start_price": 200,
+      "reserve_price": 350
+   },
+   {
+      "title": "Smartphone",
+      "description": "Latest model, 128GB storage",
+      "start_price": 300,
+      "reserve_price": 500
+   },
+   {
+      "title": "Bluetooth Headphones",
+      "description": "Noise-cancelling, over-ear",
+      "start_price": 60,
+      "reserve_price": 120
+   },
+   {
+      "title": "Coffee Maker",
+      "description": "Automatic, 12-cup capacity",
+      "start_price": 40,
+      "reserve_price": 90
+   },
+   {
+      "title": "Electric Guitar",
+      "description": "Sunburst finish, includes case",
+      "start_price": 150,
+      "reserve_price": 300
+   },
+   {
+      "title": "Tablet",
+      "description": "10-inch display, WiFi only",
+      "start_price": 120,
+      "reserve_price": 220
+   },
+   {
+      "title": "Smartwatch",
+      "description": "Fitness tracking, waterproof",
+      "start_price": 80,
+      "reserve_price": 160
+   },
+   {
+      "title": "Digital Camera",
+      "description": "24MP, 4K video recording",
+      "start_price": 250,
+      "reserve_price": 400
+   },
+   {
+      "title": "Lawn Mower",
+      "description": "Electric, self-propelled",
+      "start_price": 180,
+      "reserve_price": 320
+   },
+   {
+      "title": "Cookware Set",
+      "description": "10-piece, non-stick",
+      "start_price": 70,
+      "reserve_price": 140
+   },
+   {
+      "title": "Leather Jacket",
+      "description": "Genuine leather, size L",
+      "start_price": 90,
+      "reserve_price": 180
+   },
+   {
+      "title": "Wireless Speaker",
+      "description": "Portable, 20-hour battery",
+      "start_price": 55,
+      "reserve_price": 110
+   },
+   {
+      "title": "Camping Tent",
+      "description": "4-person, waterproof",
+      "start_price": 85,
+      "reserve_price": 170
+   },
+   {
+      "title": "Robot Vacuum",
+      "description": "WiFi connected, self-charging",
+      "start_price": 130,
+      "reserve_price": 260
+   },
+   {
+      "title": "Electric Scooter",
+      "description": "Foldable, 15-mile range",
+      "start_price": 220,
+      "reserve_price": 400
+   },
+   {
+      "title": "Air Purifier",
+      "description": "HEPA filter, quiet operation",
+      "start_price": 60,
+      "reserve_price": 120
+   },
+   {
+      "title": "Fitness Tracker",
+      "description": "Heart rate monitor, sleep tracking",
+      "start_price": 40,
+      "reserve_price": 90
    }
 ]

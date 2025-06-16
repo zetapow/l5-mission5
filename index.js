@@ -1,29 +1,27 @@
 #!/usr/bin/env node
 
-const { program } = require("commander");
-const seed = require("./commands/seed");
-const deleteAll = require("./commands/delete");
+import { program } from "commander";
+import seed from "./commands/seed.js";
+import deleteAll from "./commands/delete.js";
 
 program
-   .command("seed")
+   // .command("seed")
    .description("Seed the database with dummy data")
-   .action(async () => {
+   .version("1.0.0")
+   .option("-s, --seed", "seed the database")
+   .option("-d, --delete", "delete the database");
+// .action(async () => {
+//    await seed();
+// });
+
+program.action(async (options) => {
+   if (options.seed) {
       await seed();
-   });
-
-program
-   .command("delete")
-   .description("Delete all auction data")
-   .action(async () => {
+   } else if (options.delete) {
       await deleteAll();
-   });
-
-// if (cmd === "seed") {
-//    require("./commands/seed")();
-// } else if (cmd === "delete") {
-//    require("./commands/delete")();
-// } else {
-//    console.log("Usage: node index.js [seed|delete]");
-// }
+   } else {
+      console.log("Usage: node index.js --seed or --delete");
+   }
+});
 
 program.parse(process.argv);

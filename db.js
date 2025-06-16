@@ -1,14 +1,16 @@
-const { MongoClient } = require("mongodb");
+import { MongoClient } from "mongodb";
 
 const uri = process.env.MONGODB_URI || "mongodb://localhost:27017";
 const databaseName = process.env.MONGODB_DB || "auctionDatabase";
 
-module.exports.getDatabaseClient = async function () {
+async function getDatabaseClient() {
    const client = new MongoClient(uri);
    await client.connect();
    return client;
-};
+}
 
-module.exports.getDatabase = function (client) {
+function getDatabase(client) {
    return client.db(databaseName);
-};
+}
+
+export { getDatabaseClient, getDatabase };

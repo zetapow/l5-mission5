@@ -1,8 +1,11 @@
-const { getDatabaseClient, getDatabase } = require("../db");
-const fs = require("fs");
-const path = require("path");
+import { getDatabaseClient, getDatabase } from "../db.js";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-module.exports = async function seed() {
+async function seed() {
    const client = await getDatabaseClient();
    try {
       const db = getDatabase(client);
@@ -19,4 +22,6 @@ module.exports = async function seed() {
       // Ensure the client is closed in case of an error
       await client.close();
    }
-};
+}
+
+export default seed;
