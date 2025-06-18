@@ -23,15 +23,14 @@ async function deleteAll() {
    try {
       const db = getDatabase(client);
 
-      // const collection = client.db().collection("auctions");
       await db.collection("items").deleteMany({});
-      console.log("Deleted all auction data!");
+      console.log(chalk.red("Deleted all auction data!"));
    } finally {
       // Ensure the client is closed in case of an error=_
       try {
          await client.close();
       } catch (closeErr) {
-         console.error("Error closing database client:", closeErr);
+         console.error(chalk.red("Error closing database client:"), closeErr);
       }
    }
 }

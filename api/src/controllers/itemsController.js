@@ -13,10 +13,10 @@ export const searchItems = async (req, res) => {
          query.description = { $regex: description, $options: "i" }; // Case-insensitive search
       }
       if (start_price) {
-         query.start_price = { $gte: Number(start_price) }; // Greater than or equal to start_price
+         query.start_price = { $gte: Number(start_price) }; // Greater than or equal to
       }
       if (reserve_price) {
-         query.reserve_price = { $lte: Number(reserve_price) }; // Less than or equal to reserve_price
+         query.reserve_price = { $lte: Number(reserve_price) }; // Less than or equal to
       }
 
       const items = await Item.find(query);
