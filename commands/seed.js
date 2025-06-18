@@ -1,4 +1,4 @@
-import { getDatabaseClient, getDatabase } from "../db.js";
+import { getDatabaseClient, getDatabase } from "../helper/getDatabase.js";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -15,7 +15,7 @@ async function seed() {
             "utf8"
          )
       );
-      const collection = db.collection("auctions");
+      const collection = db.collection("items");
       await collection.insertMany(data);
       console.log("Data seeded successfully!");
    } finally {
